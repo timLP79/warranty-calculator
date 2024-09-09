@@ -1,4 +1,4 @@
-// script.js
+// script.js - initial commit
 function calculateDates() {
     const inputDate = new Date(document.getElementById('inputDate').value);
     
