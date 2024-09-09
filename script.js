@@ -21,11 +21,11 @@ function calculateDates() {
     const twentyFiveYears = new Date(inputDate);
     twentyFiveYears.setFullYear(inputDate.getFullYear() + 25);
 
-    // Display the results
-    document.getElementById('results').innerText = `
-        1 Year: ${oneYear.toDateString()}
-        3 Years: ${threeYears.toDateString()}
-        5 Years: ${fiveYears.toDateString()}
-        25 Years: ${twentyFiveYears.toDateString()}
+    // Construct the output HTML with proper alignment
+    document.getElementById('results').innerHTML = `
+        <div class="result-item"><strong>1 Year:</strong> ${oneYear.toDateString()}</div>
+        <div class="result-item"><strong>3 Years:</strong> ${threeYears.toDateString()}</div>
+        <div class="result-item"><strong>5 Years:</strong> ${fiveYears.toDateString()}</div>
+        <div class="result-item"><strong>25 Years:</strong> ${twentyFiveYears.toDateString()}</div>
     `;
 }
